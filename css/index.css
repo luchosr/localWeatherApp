@@ -1,4 +1,12 @@
+main{
+margin-top: 5%;
+}
+
 ul li {
   display: inline;
-  padding: 30px;
+  padding: 55px;
+}
+ul{
+  margin-top: 250px;
+  margin-bottom: 30px;
 }
