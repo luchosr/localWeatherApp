@@ -1,3 +1,6 @@
+body{
+  background-color: #e8edef;
+}
 main{
 margin-top: 5%;
 }
@@ -7,6 +10,21 @@ ul li {
   padding: 55px;
 }
 ul{
-  margin-top: 250px;
+  margin-top: 100px;
   margin-bottom: 30px;
+}
+.wi{
+  color: #fff;
+  font-size: 150px;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+.recuadro{
+  background-color: grey;
+  opacity: 0.2;
+  max-width: 380px;
+  max-height: 380px;
+  margin-top:70px;
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0px black;
 }
