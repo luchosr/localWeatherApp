@@ -3,14 +3,11 @@ main {
 }
 
 body {
-  /*background-color: #e8edef;*/
-  background-color: #f2f2f2;
+  background-color: #e8edef;
+  /*background-color: #f2f2f2;*/
 }
-hr {
-  color: black;
-  height: 100px;
-}
-.a{
+
+/*.a{
   color: #ff2d55;
 }
 .p{
@@ -18,7 +15,7 @@ hr {
 }
 .pp{
   color: #4cd964;
-}
+}*/
 .title {
   font-family: 'Montserrat', sans-serif;
   color: grey;
@@ -28,12 +25,15 @@ hr {
 .displ{
   display: flex;
   float: right;
+  font-weight: bold;
   color: black;
+  /*text-shadow: 2px 2px 0 black;*/
   font-size: 50px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: 'Open Sans', sans-serif;
+  opacity: 1.5;
+  font-family: 'Montserrat', sans-serif;
 }
 .temp{
   font-size: 90px;
@@ -70,4 +70,12 @@ hr {
   border-radius: 10px;
   box-shadow: 12px 15px 20px  black;
   display: flex;
+}
+.boton{
+  border-radius: 10px;
+  margin-top: 80px;
+  outline: 0;
+}
+.boton:active{
+  border: 1px solid black;
 }
