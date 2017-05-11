@@ -17,12 +17,15 @@ $(document).ready(function() {
 
       $.getJSON(api, function(data) {
         // $("#icono").
+          var cont = 0;
+          var tempC = Math.round(data.main.temp - 273);
         $("#city").text(data.name);
 
         console.log(data);
-        var tempC = (data.main.temp - 273,15);
-        $(".temp").text(tempC + "ºC");
-        var tempF = tempC * 1.8 + 32;
+
+        console.log("La temperatura es de: " + (data.main.temp - 273)+ " grados centigrados");
+        $(".temp").text(tempC+ "ºC");
+
         var city = data.name;
         console.log("En la ciudad de: " + city);
         var condiciones = data.weather[0].description;
@@ -53,7 +56,32 @@ $(document).ready(function() {
           $("#icono").addClass("wi-rain");
         }else if (icono === "09n") {
           $("#icono").addClass("wi-rain");
+        }else if (icono === "10d") {
+          $("#icono").addClass("wi-day-rain");
+        }else if (icono === "10n") {
+          $("#icono").addClass("wi-night-rain");
+        }else if (icono === "11d") {
+          $("#icono").addClass("wi-day-lightning");
+        }else if (icono === "11n") {
+          $("#icono").addClass("wi-night-lightning");
+        }else if (icono === "13d") {
+          $("#icono").addClass("wi-day-snow");
+        }else if (icono === "13n") {
+          $("#icono").addClass("wi-night-snow");
+        }else if (icono === "50d") {
+          $("#icono").addClass("wi-day-fog");
+        }else if (icono === "50n") {
+          $("#icono").addClass("wi-night-fog");
         }
+
+        $(".boton").click(function(){
+          if (cont%2 === 0) {
+          $(".temp").text(tempF+ "ºF");
+        }else {
+          $(".temp").text(tempC+ "ºC");
+        }
+          cont++;
+        });
       }); 
 
     });
