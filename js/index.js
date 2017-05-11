@@ -31,6 +31,29 @@ $(document).ready(function() {
         console.log("Las condiciones generales son: " + condiciones);
         var velViento = Math.round(data.wind.speed * 1.852 * 100)/100;
         console.log("La velocidad del viento es de. " + velViento+ " kilometros por hora.");
+        var icono = data.weather[0].icon;
+        console.log("El icono es:" + icono);
+        if (icono === "01d") {
+          $("#icono").addClass("wi-day-sunny");
+        } else if (icono === "01n") {
+          $("#icono").addClass("wi-night-clear");
+          }else if (icono === "02d") {
+            $("#icono").addClass("wi-day-cloudy");
+          }else if (icono === "02n") {
+            $("#icono").addClass("wi-night-alt-cloudy");
+        }else if (icono === "03d") {
+          $("#icono").addClass("wi-cloud");
+        }else if (icono === "03n") {
+          $("#icono").addClass("wi-cloud");
+        }else if (icono === "04d") {
+          $("#icono").addClass("wi-cloudy");
+        }else if (icono === "04n") {
+          $("#icono").addClass("wi-cloudy");
+        }else if (icono === "09d") {
+          $("#icono").addClass("wi-rain");
+        }else if (icono === "09n") {
+          $("#icono").addClass("wi-rain");
+        }
       }); 
 
     });
