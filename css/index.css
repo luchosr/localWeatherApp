@@ -70,14 +70,25 @@ body {
     }
 }
 .recuadro {
-  background-color: #94ACC9;
-  opacity: 0.2;
+
   max-width: 700px;
   max-height: 980px;
   margin-top: 150px;
   border-radius: 10px;
   box-shadow: 12px 15px 20px  black;
+  position: relative;
   display: flex;
+}
+.recuadro:after {
+  background-color: #94ACC9;
+  width: 700px;
+  height: 300px;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left:0;
+  opacity: 0.8;
 }
 .boton{
   border-radius: 10px;
