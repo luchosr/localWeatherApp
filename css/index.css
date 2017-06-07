@@ -70,7 +70,7 @@ body {
   margin-top: 80px;
   outline: 0;
   width: 70%;
-background-color: transparent;
+  background-color: transparent;
   color: rgba(72, 87, 112,0.8);
   border: 1px solid rgba(72, 87, 112,0.8);
 }

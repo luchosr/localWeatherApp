@@ -13,33 +13,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-  <title>FCC Local Weather App</title>
+  <title>Local Weather App</title>
 </head>
 
 <body class="text-center">
+
+  <!-- Main display -->
   <main>
-    <!-- <h1 class="title"><span class="a">L</span>ocal <span class="p">W</span>eather <span class="pp">A</span><span class="">p</span><span class="">p</span> </h1> -->
 
     <div class="continer-fluid">
-
-        <div class="container recuadro ">
-          <div class="container dib">
-            <li class="wi " id="icono"></li>
-            <span class="indic temp displ">---</span>
-          </div>
-
-  <div class="displ container">
-            <span id="city">---</span>
-            <span id="condiciones"> ---</span>
-            <!-- <button type="button" class="btn btn-default">ºF/ºC</button> -->
-
-              <button type="button" class="boton">ºF |ºC</button>
-
+      <div class="container recuadro ">
+        <!-- Weather Icon and Temperature display -->
+        <div class="container dib">
+          <li class="wi " id="icono"></li>
+          <span class="indic temp displ">---</span>
         </div>
+        <!-- City and Weather conditions display -->
+        <div class="displ container">
+          <span id="city">---</span>
+          <span id="condiciones"> ---</span>
+          <!-- button for change temperature measures -->
+          <button type="button" class="boton">ºF |ºC</button>
         </div>
-    </div>
-    <div class="container-fluid">
-
+      </div>
     </div>
   </main>
 
