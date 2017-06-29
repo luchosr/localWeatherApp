@@ -20,6 +20,7 @@
                   $("#city").text(city);// Displaying the City or Location name.
                   $("#condiciones").text(condiciones);//Displaying weather conditions.
                   (function(){//Modularized function that shows a determinate icon depending the day conditions.
+                        $("#icono").removeClass("wi-na");
                     if (icono === "01d") {
                       $("#icono").addClass("wi-day-sunny");
                     } else if (icono === "01n") {
