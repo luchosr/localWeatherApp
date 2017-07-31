@@ -4,9 +4,11 @@
   $(document).ready(function() { //Awaits for complete DOM load.
         var lat, long;//lattitude and longitude variable declaration.
         if (navigator.geolocation) {// if geolocation success
+          console.log("la geolocalizacion funciona");
           navigator.geolocation.getCurrentPosition(function(position) {// setting lattitude and longitude values.
               lat = position.coords.latitude;
               lon = position.coords.longitude;
+              console.log("latitud "+lat);
               //Setting API key value and API url. Notice the crossorig.in due a cross origins problems.
               var API_KEY = '550b915fae53857d3853fc8509e34f54' , api ='https://crossorig.in/http://api.openweathermap.org/data/2.5/weather?lat=' +lat +'&lon=' +lon +'&appid=' +API_KEY;
               // getting JSON from weather API.
