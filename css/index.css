@@ -1,5 +1,5 @@
 main {
-  margin-top: 5%;
+  margin-top: 0;
 }
 
 body {
@@ -101,10 +101,35 @@ body {
       margin-bottom: 5px;
     }
 }
-@media screen and (max-width: 320px){
-  main{
-    margin: 0;
+
+@media screen and (max-width: 375px){
+  .recuadro {
+    flex-direction: column;
+    width: 375px;
+    height: 667px;
+    padding: 0;
   }
+  .dib{
+    width: 375px;
+    border-right: none;
+    border-bottom: none;
+    padding: 0;
+  }
+  .wi{
+    font-size: 150px;
+    margin-top: 40px;
+    width: 375px;
+  }
+  .temp{
+    font-size: 70px;
+    width: 375px;
+  }
+
+
+}
+
+@media screen and (max-width: 320px){
+ 
   .recuadro {
     flex-direction: column;
     width: 320px;
