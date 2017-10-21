@@ -45,6 +45,7 @@ body {
   box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.5);
   position: relative;
   display: flex;
+  
 }
 
 .boton{
@@ -67,8 +68,17 @@ body {
 
 
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 766px) {
+  .recuadro {
+      flex-direction: column;
+      width: 400px;
+      height: 600px;
+      padding: 0;
+    }
+     .dib{
+      border-right: none;
+      border-bottom: 1px solid black;
+    }
 
 }
 
@@ -84,10 +94,46 @@ body {
     }
     .dib{
       border-right: none;
-      border-bottom: 1px solid black;
+      /* border-bottom: 1px solid black; */
     }
 
     .boton{
       margin-bottom: 5px;
     }
+}
+@media screen and (max-width: 320px){
+  main{
+    margin: 0;
+  }
+  .recuadro {
+    flex-direction: column;
+    width: 320px;
+    height: 570px;
+    padding: 0;
+  }
+  .cond{
+    padding-bottom: 40px;
+  }
+  .dib{
+    border-right: none;
+    border-bottom: none;
+    width: 320px;
+    padding: 0;
+  }
+  .displ{
+    width: 320px;
+    padding: 0;
+    font-size: 35px;
+  }
+  .wi{
+    font-size: 80px;
+    margin-top: 40px;
+  }
+.temp{
+  font-size: 50px;
+}
+  .boton{
+    margin-bottom: 5px;
+  }
+
 }
