@@ -1,5 +1,5 @@
 main {
-  margin-top: 0;
+  margin-top: 150px;
 }
 
 body {
@@ -67,42 +67,67 @@ body {
 *****************************************************************************************/
 
 
+/* -------- IPHONE 6 PLUS --------------- */
 
-@media only screen and (max-width: 766px) {
+@media screen and (max-width: 414px) {
+  main {
+    margin-top: 0;
+  }
   .recuadro {
-      flex-direction: column;
-      width: 400px;
-      height: 600px;
-      padding: 0;
-    }
-     .dib{
-      border-right: none;
-      border-bottom: 1px solid black;
-    }
+    flex-direction: column;
+    width: 414px;
+    height: 736px;
+    padding: 0;
+  }
+  .cond{
+    padding-bottom: 40px;
+  }
+  .dib{
+    width: 414px;
+    border-right: none;
+    border-bottom: none;
+    padding: 0;
+  }
 
+  .boton{
+    margin-bottom: 5px;
+  }
+}
+/* ----------  NEXUS 6P ------------ */
+@media screen and (max-width: 412px) {
+  main {
+    margin-top: 0;
+  }
+  .recuadro {
+    flex-direction: column;
+    width: 412px;
+    height: 732px;
+    padding: 0;
+  }
+  .cond{
+    padding-bottom: 40px;
+  }
+  .displ{
+    margin: 0;
+  }
+  .dib{
+    width: 412px;
+    border-right: none;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .boton{
+    margin-bottom: 5px;
+  }
 }
 
-@media screen and (max-width: 480px) {
-    .recuadro {
-      flex-direction: column;
-      width: 400px;
-      height: 700px;
-      padding: 0;
-    }
-    .cond{
-      padding-bottom: 40px;
-    }
-    .dib{
-      border-right: none;
-      /* border-bottom: 1px solid black; */
-    }
-
-    .boton{
-      margin-bottom: 5px;
-    }
-}
+/* --------------- IPHONE 6 ---------------- */
 
 @media screen and (max-width: 375px){
+  main {
+    margin-top: 0;
+  }
   .recuadro {
     flex-direction: column;
     width: 375px;
@@ -114,6 +139,11 @@ body {
     border-right: none;
     border-bottom: none;
     padding: 0;
+  }
+  .displ{
+    width: 375px;
+    padding: 0;
+    font-size: 35px;
   }
   .wi{
     font-size: 150px;
@@ -127,13 +157,17 @@ body {
 
 
 }
+/* ------------- IPHONE 5 ------------ */
 
 @media screen and (max-width: 320px){
+  main {
+    margin-top: 0;
+  }
  
   .recuadro {
     flex-direction: column;
     width: 320px;
-    height: 570px;
+    height: 568px;
     padding: 0;
   }
   .cond{
@@ -151,7 +185,7 @@ body {
     font-size: 35px;
   }
   .wi{
-    font-size: 80px;
+    font-size: 100px;
     margin-top: 40px;
   }
 .temp{
