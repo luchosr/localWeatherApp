@@ -1,4 +1,4 @@
 # localWeatherApp
-A freeCodeCamp intermediate project practice.
+> A freeCodeCamp intermediate project practice.
 
-It's under maintenance by the moment.
+> You can try it clicking [HERE](https://luchosr.github.io/localWeatherApp/).
